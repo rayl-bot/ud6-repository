@@ -24,7 +24,7 @@ public class UD6Exercice6App {
 		String textNum = "";
 		do {
 			textNum = JOptionPane.showInputDialog("Introduce un numero entero positivo:");
-		} while (Integer.parseInt(textNum)<0);
+		} while (textNum.contains("-") || textNum.contains("."));
 		
 		JOptionPane.showMessageDialog(null, "El numero " + textNum + " tiene " + numCifras(textNum)+" cifra/as.");
 	}
